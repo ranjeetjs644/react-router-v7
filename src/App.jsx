@@ -3,6 +3,9 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Navbar from './Navbar'
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
         <div className="text-center text-sm text-gray-500 mt-1">
           A simple demo showing client-side routing
         </div>
+        <Navbar />
       </header>
       
       <main>
@@ -20,6 +24,8 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/services" element={<Services/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<Signup/>} />
         </Routes>
       </main>
       

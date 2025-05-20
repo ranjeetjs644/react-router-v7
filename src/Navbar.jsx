@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   
   return (
-    <nav className='flex gap-2 mx-auto'>
+    <nav className='flex gap-2 mx-auto mt-4 justify-center'>
       <Link 
         to="/" 
         className={`px-3 py-1 rounded transition-colors ${isActive('/')}`}
@@ -35,6 +35,21 @@ const Navbar = () => {
       >
         Contact
       </Link>
+      
+      <div className="ml-auto flex gap-2">
+        <Link 
+          to="/login" 
+          className={`px-3 py-1 rounded transition-colors ${isActive('/login')} border border-blue-500`}
+        >
+          Login
+        </Link>
+        <Link 
+          to="/signup" 
+          className={`px-3 py-1 rounded transition-colors ${isActive('/signup')} bg-blue-600 text-white hover:bg-blue-700`}
+        >
+          Sign Up
+        </Link>
+      </div>
     </nav>
   )
 }

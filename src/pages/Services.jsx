@@ -7,10 +7,7 @@ const Services = () => {
       <h1 className="text-2xl font-bold mb-4">Services Page</h1>
       <p className="mb-6">This page demonstrates navigation with React Router DOM.</p>
       
-      <div className="mb-6 p-4 border border-gray-300 rounded bg-white">
-        <h2 className="font-bold mb-2">Navigation</h2>
-        <Navbar />
-      </div>
+     
       
       <div className="p-4 border border-gray-300 rounded bg-white">
         <p className="mb-2"><strong>Current Route:</strong> /services</p>
